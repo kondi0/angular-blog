@@ -1,0 +1,24 @@
+<div class="row mb-2">
+  <div class="col-12">
+    <a href class="btn btn-primary" routerLink="/posts">{{'go_back' | translate}}</a>
+  </div>
+</div>
+<div class="row" *ngIf="post">
+  <div class="col-12">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h2>{{post.title}}</h2>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="imageUrl">
+      <mat-card-content>
+        <div class="row">
+          <div class="col-12">
+            {{post.body}}
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">App Conasa</a>
+  <div class="pull-right">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="button"
+            *ngIf="user?.userName"
+            (click)="logout()">
+      {{'logout' | translate}}
+    </button>
+  </div>
+  <span *ngIf="user?.userName" class="ml-5">{{user.userName}}</span>
+</nav>
+
+<div class="main">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,19 @@
+{
+  "written_by": "Escrito por",
+  "filter_posts": "Filtra los posts por el título...",
+  "pagination.nextpage": "Siguiente página",
+  "pagination.previouspage": "Página anterior",
+  "pagination.itemsperpage": "Elementos por página",
+  "login": "Login",
+  "google_account": "Login con Google",
+  "enter_user": "Introduce usuario",
+  "enter_password": "Introduce contraseña",
+  "logout": "Cerrar sesión",
+  "read_more": "Leer más",
+  "edit": "Editar",
+  "go_back": "Volver",
+  "edit_post": "Editar Post",
+  "title": "Título",
+  "body": "Cuerpo",
+  "save": "Guardar"
+}

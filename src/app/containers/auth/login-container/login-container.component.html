@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{'login' | translate}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="row">
+      <div class="col-12">
+        <form [formGroup]="signInForm">
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="userName"
+                   placeholder="{{'enter_user' | translate}}">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" formControlName="password"
+                   placeholder="{{'enter_password' | translate}}">
+          </div>
+        </form>
+        <p class="text-danger" *ngIf="signInForm.errors?.invalidCredentials">
+          Usuario o contraseña incorrecto</p>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" (click)="signInWithUser()">{{'login' | translate}}</button>
+        <button class="btn btn-danger" (click)="signInWithGoogle()">{{'google_account' | translate }}</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

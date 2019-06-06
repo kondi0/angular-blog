@@ -1,0 +1,14 @@
+<div class="cc card">
+  <div class="wrapper"
+       [ngStyle]="{background: 'url(https://picsum.photos/800/800?random) center / cover no-repeat'}">
+    <div class="data">
+      <div class="content">
+        <span class="author">{{'written_by' | translate}}: {{post.userId}}</span>
+        <h1 class="title"><a href="#">{{post.title}}</a></h1>
+        <p class="text">{{post.body | truncate}}</p>
+        <a href="#" class="button" [routerLink]="['/posts/detail', post.id]">{{'read_more' | translate}}</a>
+        <a href="#" class="button" [routerLink]="['/posts/edit', post.id]" admin>{{'edit' | translate}}</a>
+      </div>
+    </div>
+  </div>
+</div>
